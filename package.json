@@ -1,0 +1,36 @@
+{
+  "name": "secure-file-upload-microservice",
+  "version": "1.0.0",
+  "description": "A secure Node.js microservice for file upload, metadata processing, and async background jobs using BullMQ.",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "express",
+    "typeorm",
+    "bullmq",
+    "file-upload",
+    "microservice",
+    "nodejs",
+    "jwt"
+  ],
+  "author": "Avinash Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bullmq": "^5.53.2",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "ioredis": "^5.6.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.0",
+    "pg": "^8.16.0",
+    "typeorm": "^0.3.24"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
