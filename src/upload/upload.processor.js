@@ -2,9 +2,10 @@ const { AppDataSource } = require('../config/database');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const File = require('../entities/File');
 
 module.exports = async function fileProcessor(job) {
-  const fileRepo = AppDataSource.getRepository('File');
+  const fileRepo = AppDataSource.getRepository(File);
   const fileRecord = await fileRepo.findOneBy({ id: job.data.fileId });
 
   if (!fileRecord) throw new Error('File not found');
